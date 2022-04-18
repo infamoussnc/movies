@@ -1,0 +1,39 @@
+
+INSERT INTO `produktionsfirma` (`Produktionsfirma_ID`, `Bezeichnung`) VALUES
+(1, 'Bavaria Filmstudios'),
+(2, 'Great American Films'),
+(3, 'Touchstone Pictures'),
+(4, 'Warner Brothers Pictures');
+
+INSERT INTO `filme` (`Song_ID`, `Titel`, `Erscheinungsdatum`, `Produktionsfirma_ID`) VALUES
+(3, 'Dirty Dancing', '1987-08-21', 2),
+(4, 'Sister Act', '1992-05-29', 3),
+(5, 'Harry Potter u. der Stein der Weisen', '2001-11-23', 4),
+(6, 'Casanova', '2006-02-09', 3),
+(7, 'Die unendliche Geschichte', '1984-05-20', 1),
+(8, 'Die Welle', '2008-03-13', 1),
+(9, 'Krieg in Chinatown', '1987-09-25', 2),
+(10, 'I Am Legend', '2008-01-10', 4),
+(11, 'Transcendence', '2014-04-18', 4),
+(12, 'Harry Potter und der Orden des Phönix', '2007-07-01', 4);
+
+INSERT INTO `schauspieler` (`id`, `Vorname`, `Nachname`, `Herkunpft`) VALUES
+(1, 'Christoph', 'Pollhammer', 'Norwegen'),
+(2, 'Max', 'Heinz', 'Deutschland'),
+(3, 'Christian', 'Mandel', 'Austria'),
+(4, 'Chris', 'Lux', 'Norway'),
+(5, 'Daniel', 'Radcliffe', 'England'),
+(6, 'Emma', 'Watson', 'England'),
+(7, 'Rupert', 'Grint', 'England');
+
+INSERT INTO `schauspieler_has_filme` (`Schauspieler_id`, `Filme_Song_ID`, `Rolle`) VALUES
+(1, 6, NULL),
+(2, 8, NULL),
+(3, 3, NULL),
+(4, 11, NULL),
+(5, 5, 'Harry Potter'),
+(5, 12, 'Harry Potter'),
+(6, 5, 'Hermine Granger'),
+(6, 12, 'Hermine Granger'),
+(7, 5, 'Ron Weasley'),
+(7, 12, 'Ron Weasley');
