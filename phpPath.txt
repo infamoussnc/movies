@@ -1,0 +1,12 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "python.defaultInterpreterPath": "C:\\Users\\Seneca\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+    
+    //The PHP Paths are needed
+    "php.validate.executablePath": "c:\\xampp\\php\\php.exe",
+    "php.executablePath": "c:\\xampp\\php\\php.exe",
+    "php.debug.executablePath": "c:\\xampp\\php\\php.exe",
+    
+    "jupyter.askForKernelRestart": false
+   
+}
